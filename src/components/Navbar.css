@@ -1,0 +1,40 @@
+.outer{
+display: flex;
+flex-direction: row;
+background-color: rgb(54, 22, 105);
+}
+.navbar-div{
+    /* display: flex; */
+    background-color: rgb(129, 185, 167);
+    margin-right: auto;
+    width:10px;
+    /* gap: 30px; */
+   }
+.logo{
+ width: 40px;;
+ height:30px;
+ border: 5px solid red;
+}
+.logo>img{
+width: 20px;
+border: 5px solid red;
+
+}
+.claim-div{
+display: flex;
+width: 20px;;
+ height:30px;
+
+}
+
+.claim-div>img{
+width: 50px;
+flex-flow: column-reverse;
+
+}
+
+.call-div{
+display: flex;
+width: 20px;;
+ height:30px;
+}
