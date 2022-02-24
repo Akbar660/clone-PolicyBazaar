@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
-import { Alert,TextField } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import Alert from '@mui/material/Alert';
 import styled from "styled-components";
 
 import { useNavigate } from "react-router-dom";

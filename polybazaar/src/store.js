@@ -6,13 +6,25 @@ import thunk from "redux-thunk";
 
 import { composeWithDevTools } from "redux-devtools-extension";
 
-import { getAllTypeReducers } from "./reducers/typeReducer";
+// import { getAllTypeReducers } from "./reducers/typeReducer";
+import { registerUserReducer,loginUserReducer} from "./reducers/userReducer";
+
 
 const finalReducer = combineReducers({
-  getAllTypeReducers: getAllTypeReducers,
+registerUserReducer:registerUserReducer,
+loginUserReducer:loginUserReducer,
 });
 
-const initialState = {};
+
+const currentUser = localStorage.getItem("currentUser")
+  ? JSON.parse(localStorage.getItem("currentUser"))
+  : [];
+  
+const initialState = {
+  loginUserReducer:{
+    currentUser:currentUser
+  }
+};
 
 const composeEnhancers = composeWithDevTools({});
 
@@ -21,5 +33,5 @@ const store = createStore(
   initialState,
   composeEnhancers(applyMiddleware(thunk))
 );
-
+console.log(store)
 export default store;

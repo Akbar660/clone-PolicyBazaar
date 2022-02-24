@@ -1,11 +1,12 @@
 const express=require("express");
 
-
-// const pizzaController = require("./controllers/pizza.controller")
+const userController=require("./controllers/user.controller")
 
 
 const app=express();
+const db=require("./db")
 app.use(express.json());
+
 
 
 app.get("/", (req,res)=>{
@@ -13,7 +14,7 @@ app.get("/", (req,res)=>{
 })
 
 
+app.use("/api/users/",userController)
 
-
-const port=process.env.PORT || 5000;
-app.listen(port,()=>"serverrunning at port 5000")
+const port=process.env.PORT || 8000;
+app.listen(port,()=>"serverrunning at port 8000")

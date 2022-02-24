@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-var mongoURL="mongodb+srv://Akbar:akbar660@pizza.eokxr.mongodb.net/pizza";
+var mongoURL="mongodb+srv://Akbar:akbar660@pizza.eokxr.mongodb.net/policy";
 
 mongoose.connect(mongoURL , {
     useUnifiedTopology:true ,

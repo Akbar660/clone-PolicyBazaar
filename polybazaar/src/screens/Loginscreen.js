@@ -7,6 +7,9 @@ import styled from "styled-components";
 
 import { useNavigate } from "react-router-dom";
 
+import {useDispatch,useSelector} from "react-redux"
+import { loginUser } from "../actions/userAction";
+
 const Carddiv = styled.div`
   width: 500px;
   position: absolute;
@@ -60,21 +63,28 @@ const Last = styled.p`
 `;
 
 const Loginscreen = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("");
 
   const navigate=useNavigate()
-
+  const dispatch=useDispatch();
  
     console.log(value)
 const handleclickOtp=()=>{
-  if(value){
-      console.log(value)
-    navigate("/login_otp")
 
-  } else{
-alert("Enter Required Fields");
-// navigate("/login")
+  const user={
+    value
   }
+
+  console.log(user)
+  dispatch(loginUser(user))
+//   if(value){
+//       console.log(value)
+//     navigate("/login_otp")
+
+//   } else{
+// alert("Enter Required Fields");
+// // navigate("/login")
+//   }
 
 }
 

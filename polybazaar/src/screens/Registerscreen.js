@@ -4,7 +4,10 @@ import { Card, Button } from "react-bootstrap";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import styled from "styled-components";
+import {useDispatch,useSelector} from "react-redux";
 
+import { registerUser } from "../actions/userAction";
+ 
 import { useNavigate } from "react-router-dom";
 
 const Carddiv = styled.div`
@@ -60,20 +63,26 @@ const Last = styled.p`
 `;
 
 const Registerscreen = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("");
 
   const navigate=useNavigate()
-
+  const dispatch=useDispatch();
+    
  
-    console.log(value)
+ 
+    
 const handleclickLogin=()=>{
   if(value){
-      console.log(value)
+    let user={
+      value,
+    }
+      console.log(user)
+      dispatch(registerUser(user))
     navigate("/login")
 
   } else{
 alert("Enter Required Fields");
-// navigate("/login")
+
   }
 
 }
