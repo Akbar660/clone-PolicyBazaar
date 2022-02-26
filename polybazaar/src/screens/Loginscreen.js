@@ -91,6 +91,7 @@ const handleclickOtp=()=>{
 const handleclickPassword=()=>{
     if(value){
         console.log(value)
+        // dispatch(loginUser(user))
       navigate("/login_password")
   
     } else{

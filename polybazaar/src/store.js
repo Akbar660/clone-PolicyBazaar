@@ -6,20 +6,21 @@ import thunk from "redux-thunk";
 
 import { composeWithDevTools } from "redux-devtools-extension";
 
-// import { getAllTypeReducers } from "./reducers/typeReducer";
+import { getAllTypeReducers } from "./reducers/typeReducer";
 import { registerUserReducer,loginUserReducer} from "./reducers/userReducer";
 
 
 const finalReducer = combineReducers({
 registerUserReducer:registerUserReducer,
 loginUserReducer:loginUserReducer,
+getAllTypeReducers:getAllTypeReducers
 });
 
 
 const currentUser = localStorage.getItem("currentUser")
   ? JSON.parse(localStorage.getItem("currentUser"))
   : [];
-  
+
 const initialState = {
   loginUserReducer:{
     currentUser:currentUser

@@ -1,4 +1,4 @@
-export const getAllTypeReducers = (state = { types: {} }, action) => {
+export const getAllTypeReducers = (state = { types: [] }, action) => {
   switch (action.type)
   {
     case "GET_TYPES_REQUEST":

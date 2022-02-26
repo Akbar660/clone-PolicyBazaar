@@ -1,16 +1,20 @@
-import React from 'react'
 
-// import { useDispatch, useSelector } from "react-redux";
-// import { getAllTypes } from '../actions/typeActions';
+
+// import Termlife from './LifeInsurance'
+// import MaxLifeCheckout from './MaxLifeCheckout'
+import Typesscreen from './Typesscreen'
+
 
 const Homescreen = () => {
 
+ return (
+  //  <Typesscreen />
+  // < Termlife />
+  <div>
 
-
-    // const dispatch = useDispatch();
-    // dispatch(getAllTypes())
-  return (
-    <h1>body</h1>
+<Typesscreen /> 
+ 
+  </div>
   )
 }
 

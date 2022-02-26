@@ -58,7 +58,9 @@ const Last = styled.p`
   font-weight: 500;
 `;
 
+
 const Loginscreen_otp = () => {
+
   const [number, setNumber] = useState(8555923032);
 
   const navigate = useNavigate();

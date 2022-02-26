@@ -9,6 +9,12 @@ import Loginscreen from "./screens/Loginscreen";
 import Registerscreen from "./screens/Registerscreen";
 import Loginscreen_otp from "./screens/Loginscreen_otp";
 import Loginscreen_password from "./screens/Loginscreen_password";
+import Termlife from "./screens/LifeInsurance";
+import  MaxLifeCheckout  from "./screens/MaxLifeCheckout";
+
+
+import MaxLifeCheckout_upgrade from './screens/MaxLifeCheckout_upgrade';
+import MaxLifeCheckout_AddOnRider from './screens/MaxLifeCheckout_AddOnRider';
 
 function App() {
   return (
@@ -24,6 +30,13 @@ function App() {
        <Route path="/register" exact element={<Registerscreen />} />
        <Route path="/login_otp" exact element={<Loginscreen_otp  />} />
        <Route path="/login_password" exact element={<Loginscreen_password  />} />
+       {/* <Route path="/checkout" exact element={<Homescreen />} /> */}
+        <Route path="/termlife" exact element={<Termlife />} />
+
+        <Route path="/maxlifecheckout" exact element={<MaxLifeCheckout />} />
+        <Route  path={"/Checkout/upgradePlan"} element={<MaxLifeCheckout_upgrade/>}></Route>
+        <Route  path={"/Checkout/upgradePlan/AddOnRider"} element={<MaxLifeCheckout_AddOnRider/>}></Route>
+       
       </Routes>
     </BrowserRouter>
 

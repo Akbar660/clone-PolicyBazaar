@@ -4,10 +4,10 @@ import { Card, Button } from "react-bootstrap";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import styled from "styled-components";
-import {useDispatch,useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { registerUser } from "../actions/userAction";
- 
+
 import { useNavigate } from "react-router-dom";
 
 const Carddiv = styled.div`
@@ -16,9 +16,8 @@ const Carddiv = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   box-sizing: border-box;
-  
 `;
 
 const Middlediv = styled.div`
@@ -65,33 +64,25 @@ const Last = styled.p`
 const Registerscreen = () => {
   const [value, setValue] = useState("");
 
-  const navigate=useNavigate()
-  const dispatch=useDispatch();
-    
- 
- 
-    
-const handleclickLogin=()=>{
-  if(value){
-    let user={
-      value,
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleclickLogin = () => {
+    if (value) {
+      let user = {
+        value,
+      };
+      console.log(user);
+      dispatch(registerUser(user));
+      navigate("/login");
+    } else {
+      alert("Enter Required Fields");
     }
-      console.log(user)
-      dispatch(registerUser(user))
-    navigate("/login")
-
-  } else{
-alert("Enter Required Fields");
-
-  }
-
-}
-
-
+  };
 
   return (
     <Carddiv>
-      <Card style={{padding:"20px"}}>
+      <Card style={{ padding: "20px" }}>
         <Card.Body>
           <img
             src="https://static.pbcdn.in/myaccount-cdn/images/login-logo.svg"
@@ -107,17 +98,13 @@ alert("Enter Required Fields");
             </P>
           </Middlediv>
           <Input>
-           
-        
-           <PhoneInput
-                inputStyle={{ width: "90%", padding: "25px", fontSize: "25px" }}
-                containerStyle={{ margin: " 30px" }}
-                country={"in"}
-                value={value}
-                onChange={setValue}
-              />
-        
-           
+            <PhoneInput
+              inputStyle={{ width: "90%", padding: "25px", fontSize: "25px" }}
+              containerStyle={{ margin: " 30px" }}
+              country={"in"}
+              value={value}
+              onChange={setValue}
+            />
           </Input>
           <Buttongroup>
             <Button
@@ -130,14 +117,14 @@ alert("Enter Required Fields");
               }}
               variant="primary"
               size="lg"
-              active onClick={handleclickLogin}
+              active
+              onClick={handleclickLogin}
             >
               Proceed
             </Button>
-            
           </Buttongroup>
           <Last>
-          Already Signed up?{" "}
+            Already Signed up?{" "}
             <Card.Link
               style={{ textDecoration: "none", fontWeight: "bold" }}
               href="/login"
@@ -151,6 +138,4 @@ alert("Enter Required Fields");
   );
 };
 
-
-
-export default Registerscreen
+export default Registerscreen;
