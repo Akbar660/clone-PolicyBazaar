@@ -17,3 +17,21 @@ export const getAllTypes = () => async (dispatch) => {
   }
 
 };
+
+export const getAllTypes1 = () => async (dispatch) => {
+  dispatch({
+    type: "GET_TYPES1_REQUEST",
+  });
+
+  try {
+
+    let response = await axios.get("api/types1/getAllTypes1");
+    console.log(response);
+    dispatch({ type: "GET_TYPES1_SUCCESS", payload: response.data });
+
+  } catch (error) {
+    console.log(error)
+    dispatch({ type: "GET_TYPES1_FAILED", payload: error });
+  }
+
+};

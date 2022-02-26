@@ -7,7 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllTypes } from "../actions/typeActions";
 import { useNavigate } from "react-router-dom";
 
-import Termlife from './LifeInsurance'
+
+
 
 const Typesscreen = () => {
  const navigate=useNavigate()
@@ -24,7 +25,14 @@ const Typesscreen = () => {
   }, []);
 
   const handleClick=(e)=>{
-    console.log(e)
+   
+    const policydata={
+      age:e.policyAge,
+      value:e.policyValue,
+      price:e.montlyPrice
+    }
+localStorage.setItem("policydata",JSON.stringify(policydata))
+    navigate("/Termlife")
   }
 
 

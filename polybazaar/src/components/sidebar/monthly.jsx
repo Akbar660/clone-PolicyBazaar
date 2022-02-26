@@ -2,6 +2,9 @@ import React from "react";
 import Select from "react-select";
 
 export default function Monthly(){
+    const policydata=JSON.parse(localStorage.getItem("policydata"))
+
+
     var MonthlyList=[
        {
         value:1,
@@ -27,7 +30,7 @@ export default function Monthly(){
     ]
     return(
         <div style={{width:"400px"}}>
-            <Select placeholder="Monthly" options={MonthlyList}/>
+            <Select placeholder={policydata.price} options={MonthlyList}/>
         </div>
     )
 }

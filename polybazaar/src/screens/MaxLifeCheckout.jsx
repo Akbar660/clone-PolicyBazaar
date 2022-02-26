@@ -5,6 +5,9 @@ import Monthly from "../components/sidebar/monthly";
 import PayFor from "../components/sidebar/payfor";
 import "./MaxLifeCheckOut.css";
 export default function MaxLifeCheckout() {
+
+  const name=JSON.parse(localStorage.getItem("name"))
+
   return (
     <div className="outer-div">
       {/* ***container-1***** */}
@@ -76,7 +79,7 @@ export default function MaxLifeCheckout() {
           </div>
           <br />
           <div>Full name as per ID proof</div>
-          <input placeholder="Name" />
+          <input placeholder={name} />
           <br />
           <br />
 

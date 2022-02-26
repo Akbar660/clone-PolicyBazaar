@@ -7,13 +7,15 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import { getAllTypeReducers } from "./reducers/typeReducer";
+import { getAllTypeReducers1 } from "./reducers/typeReducer";
 import { registerUserReducer,loginUserReducer} from "./reducers/userReducer";
 
 
 const finalReducer = combineReducers({
 registerUserReducer:registerUserReducer,
 loginUserReducer:loginUserReducer,
-getAllTypeReducers:getAllTypeReducers
+getAllTypeReducers:getAllTypeReducers,
+getAllTypeReducers1:getAllTypeReducers1
 });
 
 

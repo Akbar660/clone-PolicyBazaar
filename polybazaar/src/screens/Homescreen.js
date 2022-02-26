@@ -1,19 +1,22 @@
 
 
-// import Termlife from './LifeInsurance'
-// import MaxLifeCheckout from './MaxLifeCheckout'
-import Typesscreen from './Typesscreen'
+
+
+
+
+
+// import Typesscreen from './Typesscreen'
+
+import { Home } from "../components/Home Page/Home"
 
 
 const Homescreen = () => {
 
  return (
-  //  <Typesscreen />
-  // < Termlife />
-  <div>
 
-<Typesscreen /> 
+  <div>
  
+ <Home />
   </div>
   )
 }

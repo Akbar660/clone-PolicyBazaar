@@ -3,6 +3,12 @@ import { TextField, Button } from "@mui/material";
 import "./LifeInsurance.css";
 
 export default function Termlife() {
+const [name,setName]=useState("")
+
+const handleName=()=>{
+  localStorage.setItem("name",JSON.stringify(name))
+} 
+
   return (
     <div className="outer-container">
        {/* <Navbar/> */}
@@ -42,7 +48,7 @@ export default function Termlife() {
           </div>
 
           <div className="input-detail">
-            <input type="text" placeholder="Name" />
+            <input value={name} type="text" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
             <br />
             <br />
             <input type="date" />
@@ -51,7 +57,7 @@ export default function Termlife() {
             <input type="tel" placeholder="123-45-678" />
             <br />
             <br />
-            <button><a href="/maxlifecheckout">View Free Quotes <span>→</span></a></button>
+            <button onClick={handleName}><a href="/maxlifecheckout">View Free Quotes <span>→</span></a></button>
           </div>
         </div>
       </div>

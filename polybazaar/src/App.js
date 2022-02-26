@@ -3,12 +3,16 @@ import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import { Navbar } from "./components/Navbar/Navbar";
+import "./components/Navbar/navbar.css";
+
 import Homescreen from "./screens/Homescreen";
 import Loginscreen from "./screens/Loginscreen";
 import Registerscreen from "./screens/Registerscreen";
 import Loginscreen_otp from "./screens/Loginscreen_otp";
 import Loginscreen_password from "./screens/Loginscreen_password";
+import Typesscreen from "./screens/Typesscreen";
+
 import Termlife from "./screens/LifeInsurance";
 import  MaxLifeCheckout  from "./screens/MaxLifeCheckout";
 
@@ -20,7 +24,7 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar />
+    < Navbar />
 
     <BrowserRouter>
       <Routes>
@@ -30,7 +34,7 @@ function App() {
        <Route path="/register" exact element={<Registerscreen />} />
        <Route path="/login_otp" exact element={<Loginscreen_otp  />} />
        <Route path="/login_password" exact element={<Loginscreen_password  />} />
-       {/* <Route path="/checkout" exact element={<Homescreen />} /> */}
+       <Route path="/typescreen" exact element={<Typesscreen />} />
         <Route path="/termlife" exact element={<Termlife />} />
 
         <Route path="/maxlifecheckout" exact element={<MaxLifeCheckout />} />

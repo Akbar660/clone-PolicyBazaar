@@ -71,7 +71,8 @@ const Registerscreen = () => {
     if (value) {
       let user = {
         value,
-      };
+       };
+
       console.log(user);
       dispatch(registerUser(user));
       navigate("/login");

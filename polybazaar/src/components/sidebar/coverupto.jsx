@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
 
 import Select from "react-select";
 
 export default function CoverUpto(){
+   
+   const policydata=JSON.parse(localStorage.getItem("policydata")) 
+    console.log("ntihuiy")
+
+
     var CoverUptoList=[
        {
         value:1,
@@ -30,9 +36,11 @@ export default function CoverUpto(){
        },
 
     ]
+
+    // const [state,setState]=useState("Cover Upto")
     return(
         <div style={{width:"400px"}}>
-            <Select placeholder="Cover Upto" options={CoverUptoList}/>
+            <Select placeholder={policydata.age} options={CoverUptoList}/>
         </div>
     )
 }

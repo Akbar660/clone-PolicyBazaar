@@ -2,6 +2,8 @@ import React from "react";
 import Select from "react-select";
 
 export default function LifeCover(){
+    const policydata=JSON.parse(localStorage.getItem("policydata"))
+
     var LifeCoverList=[
        {
         value:1,
@@ -31,7 +33,7 @@ export default function LifeCover(){
     ]
     return(
         <div style={{width:"400px"}}>
-            <Select placeholder="Life Cover" options={LifeCoverList}/>
+            <Select placeholder={policydata.value} options={LifeCoverList}/>
         </div>
     )
 }
