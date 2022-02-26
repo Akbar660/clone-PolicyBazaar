@@ -2,8 +2,10 @@ import logo from "../../logos/logo.png"
 import "./navbar.css"
 
 import "../Home Page/Home.css"
-import { useState } from "react"
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import { HoverDiv1 } from "../Home Page/HoverDiv"
+
 // import { useNavigate } from "react-router-dom"
 
 export const Navbar = () => {
@@ -14,9 +16,10 @@ export const Navbar = () => {
         setState(!state);
     }
 
-    const username=JSON.parse(localStorage.getItem("currentUser"))
-    const number=username.user.value
-    console.log(username.user.value)
+    // const userstate = useSelector((state) => state.loginUserReducer);
+    // const { currentUser } = userstate;
+
+    
     const handleClick=()=>{
         window.location.href="/login"
     //  navigate("/login")
@@ -50,7 +53,8 @@ export const Navbar = () => {
                     </svg>
                 </div>
                 <div className="signIn-option" >
-                    {number ? (number) : (<button onClick={handleClick}>Sign In</button>)}
+                   <button onClick={handleClick}>Sign In</button>
+                  
                     
                 </div>
             </div>
