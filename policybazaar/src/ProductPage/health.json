@@ -1,0 +1,164 @@
+{
+   "data":[
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.png",
+   "planname":"NCB Super Premium",
+   "cashless_hospital":64,
+   "monthly_premium":673 ,
+   "annually_premium":8066,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Niva_Bupa_(formerly_known_as_Max_Bupa)@2x.png",
+   "planname":"1Cr Super Saver",
+   "cashless_hospital":70,
+   "monthly_premium":916,
+   "annually_premium":10992 ,
+   "cover":"1Cr"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Star_Health@2x.png",
+   "planname":"Medi Classic",
+   "cashless_hospital":69,
+   "monthly_premium": 620,
+   "annually_premium": 7432,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Aditya_Birla@2x.png",
+   "planname":"1 Cr Sum Insured",
+   "cashless_hospital":63,
+   "monthly_premium": 797,
+   "annually_premium":9557,
+   "cover":"1Cr"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Bajaj_Allianz@2x.png",
+   "planname":"Individual Health Guard",
+   "cashless_hospital":66,
+   "monthly_premium":701,
+   "annually_premium":8402,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/DIGIT@2x.png",
+   "planname":"Arogya Sanjeevani",
+   "cashless_hospital":45,
+   "monthly_premium":287,
+   "annually_premium":3439,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Tata_AIG@2x.png",
+   "planname":"Medicare",
+   "cashless_hospital":43,
+   "monthly_premium":662,
+   "annually_premium":7934,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Reliance@2x.png",
+   "planname":"Health Infinity (More Time)",
+   "cashless_hospital":68,
+   "monthly_premium":682 ,
+   "annually_premium":8184 ,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/ManipalCigna@2x.png",
+   "planname":"Lifetime Health",
+   "cashless_hospital":40,
+   "monthly_premium":1005,
+   "annually_premium":12051,
+   "cover":"50L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Royal_Sundaram@2x.png",
+   "planname":"Lifeline Supreme",
+   "cashless_hospital":57,
+   "monthly_premium":425,
+   "annually_premium":5089,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Future_Generali@2x.png",
+   "planname":"Health Total Vital",
+   "cashless_hospital":52,
+   "monthly_premium":661,
+   "annually_premium":7927,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Liberty_General_Insurance@2x.png",
+   "planname":"Elite",
+   "cashless_hospital":50,
+   "monthly_premium":706,
+   "annually_premium":8471,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/MAGMA_HDI@2x.png",
+   "planname":"OneHealth Shield",
+   "cashless_hospital":41,
+   "monthly_premium": 785,
+   "annually_premium":9409,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/SBI@2x.png",
+   "planname":"Arogya Supreme",
+   "cashless_hospital":56,
+   "monthly_premium":589,
+   "annually_premium":7059,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Cholamandalam@2x.png",
+   "planname":"Flexi Health",
+   "cashless_hospital":71,
+   "monthly_premium":389,
+   "annually_premium":4660,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Universal_Sompo@2x.png",
+   "planname":"Complete Healthcare Insurance Privilege",
+   "cashless_hospital":40,
+   "monthly_premium":547,
+   "annually_premium":6561,
+   "cover":"6L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Raheja_QBE@2x.png",
+   "planname":"Health QuBE SuperSaver",
+   "cashless_hospital":71,
+   "monthly_premium":246,
+   "annually_premium":2946,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Edelweiss@2x.png",
+   "planname":"Edelweiss Health Insurance Gold",
+   "cashless_hospital":46,
+   "monthly_premium":517,
+   "annually_premium":6194,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/New_India_Assurance@2x.png",
+   "planname":"Mediclaim Policy",
+   "cashless_hospital":32,
+   "monthly_premium":560,
+   "annually_premium":6715,
+   "cover":"5L"
+},
+{
+   "image":"https://static.pbcdn.in/health-cdn/images/insurer-logo/Oriental@2x.png",
+   "planname":"Individual Mediclaim Policy",
+   "cashless_hospital":30,
+   "monthly_premium":681,
+   "annually_premium":8166,
+   "cover":"5L"
+}
+]
+}
