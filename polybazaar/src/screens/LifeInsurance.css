@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .outer-container{ 
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 100%; 
     height: auto;
     padding-bottom: 90px;
@@ -14,7 +14,7 @@ body{
     border:1px solid green;
     background-color: rgb(244, 245, 245);
     width: 70%;
-    margin:5% 15%;
+    margin: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@ body{
 }
 
 .aki-img{
-    width: 77%;
+    width: 100%;
     padding: 3% 21%;
 }
 .insur-left{
@@ -146,8 +146,8 @@ width: 100%;
 }
 
 .footer-desc{
-    width: 62%;
-    padding: 0% 18% 0% 18%;
+    width: 60%;
+    padding: 40px;
     left: calc(52% - 833px/2 + 0.5px);
     bottom: 162px;
     font-family: Roboto;
@@ -156,9 +156,12 @@ width: 100%;
     font-size: 14px;
     line-height: 114%;
     text-align: center;
-    color: rgba(0, 0, 0, 0.4);
+    color: black;
+    margin: 20px auto;
+   
 }
 .footer{
     width: 100%;
     text-align: center;
+    background-color: #F4F5F7;
 }

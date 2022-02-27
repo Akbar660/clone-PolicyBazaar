@@ -48,11 +48,11 @@ export const Navbar = () => {
                 </div>
                 <div className="fourth-option">
                     <p >Support</p>
-                    <svg width="12" height="8" className="arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="12" height="8" className="arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.0339 0.299899L5.73911 4.59108L1.44793 0.296255L0.0333353 1.70965L5.73791 7.41908L11.4473 1.7145L10.0339 0.299899Z" fill="#0663F6" />
-                    </svg>
+                    </svg> */}
                 </div>
-                <div className="signIn-option" >
+                <div className="signIn-option"  >
                    <button onClick={handleClick}>Sign In</button>
                   
                     

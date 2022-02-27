@@ -103,7 +103,7 @@ export default function MaxLifeCheckout_AddOnRider() {
 
                <div className="cover-head">
                  <h3>Cover 64 Critical illness</h3>
-                 <h3>5 Lacs</h3>
+                 <h3 style={{marginRight:"20px"}}>5 Lacs</h3>
                </div>
 
               </div>
@@ -123,7 +123,7 @@ export default function MaxLifeCheckout_AddOnRider() {
 
 
         <div className="proceed">
-        <button><a href="">Proceed <span>→</span></a></button>
+        <button><a href="/payment">Proceed <span>→</span></a></button>
         </div>
         </div>
         

@@ -13,7 +13,7 @@ export const HoverDiv1 =()=>{
             <div  className="home-ho dropdown new" >
           <div className="footer-f" style={{lineHeight:"16px",backgroundColor:"white",display:"flex",flexDirection:"row",justifyContent:"space-between",width:"80%"}}>
                 <div>
-                  <img src={umbrella}  style={{margin:"5px" }} alt="one"/><b style={{position:"absolute",fontSize:"16px",margin:"5px"}}>Life Insurance</b>
+                  <img src={umbrella}  style={{marginLeft:"-90px",marginBottom:"10px" }} alt="one"/><b style={{position:"absolute",fontSize:"16px",margin:"5px"}}>Life Insurance</b>
                   <div style={{marginLeft:"0%"}} >
                   <p className="footer-hover">Term Insurance</p>
                   <p className="footer-hover">Saral Jevan Beema</p>
@@ -26,7 +26,7 @@ export const HoverDiv1 =()=>{
                   </div>
                 </div>
             <div>
-                  <img src={Dil} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Health Insurance</b>
+                  <img style={{marginLeft:"-150px", marginBottom:"20px"}} src={Dil} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Health Insurance</b>
                   <div style={{marginRight:"0%"}}>
                   <p className="footer-hover">Family Health Insurance</p>
                   <p className="footer-hover">Senior Citizen Health Insurance</p>
@@ -38,7 +38,7 @@ export const HoverDiv1 =()=>{
                 </div>
             </div>
             <div>
-                  <img src={car} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Car Insurance</b>
+                  <img style={{marginLeft:"-90px", marginBottom:"20px"}} src={car} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Car Insurance</b>
                   <div style={{marginRight:"0%"}}>
                   <p className="footer-hover">Motor Insurance</p>
                   <p className="footer-hover" onClick={() =>{
@@ -53,7 +53,7 @@ export const HoverDiv1 =()=>{
                   </div>
             </div>
             <div style={{marginRight:"0%"}}>
-                    <img src={box} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Other  Insurance</b>
+                    <img style={{marginLeft:"-90px", marginBottom:"20px"}} src={box} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"16px"}}>Other  Insurance</b>
                     <div style={{marginRight:"0%"}}>
                     <p className="footer-hover">Travelar Insurance</p>
                     <p className="footer-hover">Group Health Insurance </p>
@@ -68,20 +68,7 @@ export const HoverDiv1 =()=>{
             <br></br>
           
       </div>
-       <div style={{marginLeft:"12%"}}>
-                    <img src={piggy} alt="one"/><b style={{marginLeft:"1%",position:"absolute",fontSize:"20px"}}>Investment Plans</b>
-                    <div style={{marginRight:"0%"}}>
-                    <p className="footer-hover">Child Plans</p>
-                    <p className="footer-hover">Pension Plans </p>
-                    <p className="footer-hover">ULIP</p>
-                    <p className="footer-hover">Money Back Policy</p>
-                    <p className="footer-hover">Endowment policy</p>
-                    <p className="footer-hover">Tax saving investment</p>
-                    <p className="footer-hover">Guaranteed Return Plans</p>
-                    <p className="footer-hover">Capital Guarantee Plans</p>
-                    <p className="footer-hover">Annuity Plans</p>
-                    </div>
-            </div>
+       
         </div>
         
         </div>

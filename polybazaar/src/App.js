@@ -19,6 +19,7 @@ import  MaxLifeCheckout  from "./screens/MaxLifeCheckout";
 
 import MaxLifeCheckout_upgrade from './screens/MaxLifeCheckout_upgrade';
 import MaxLifeCheckout_AddOnRider from './screens/MaxLifeCheckout_AddOnRider';
+import Payment from "./screens/Payment";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route  path={"/Checkout/upgradePlan"} element={<MaxLifeCheckout_upgrade/>}></Route>
         <Route  path={"/Checkout/upgradePlan/AddOnRider"} element={<MaxLifeCheckout_AddOnRider/>}></Route>
        
+        <Route path="/payment" exact element={<Payment />} />
       </Routes>
     </BrowserRouter>
 

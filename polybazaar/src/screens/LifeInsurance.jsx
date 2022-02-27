@@ -37,24 +37,26 @@ const handleName=()=>{
             </p>
           </div>
 
-          <div className="input-gender">
-           
-             
-              <input placeholder="Male"  readOnly />
+          <div style={{marginBottom:"20px"}} className="input-gender">
+           <div>
+           <label>Male</label>
+           <input style={{margin:"10px",padding:"15px"}} type="checkbox" ></input>
+           </div>
+           <div>
+           <label>Female</label>
+           <input style={{margin:"10px"}} type="checkbox" ></input>
+           </div>
             
-            <br />
-            <input placeholder="Female" readOnly />
-            <br />
           </div>
 
           <div className="input-detail">
-            <input value={name} type="text" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
+            <input style={{border:"none",outline:"none"}} value={name} type="text" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
             <br />
             <br />
-            <input type="date" />
+            <input style={{border:"none",outline:"none"}} type="date" />
             <br />
             <br />
-            <input type="tel" placeholder="123-45-678" />
+            <input style={{border:"none",outline:"none"}} type="tel" placeholder="MobileNumber" />
             <br />
             <br />
             <button onClick={handleName}><a href="/maxlifecheckout">View Free Quotes <span>→</span></a></button>

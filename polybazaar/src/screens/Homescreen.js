@@ -10,12 +10,13 @@
 import { Home } from "../components/Home Page/Home"
 
 
+
 const Homescreen = () => {
 
  return (
 
   <div>
- 
+
  <Home />
   </div>
   )

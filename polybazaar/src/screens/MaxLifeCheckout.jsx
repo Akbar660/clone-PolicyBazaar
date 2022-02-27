@@ -79,22 +79,22 @@ export default function MaxLifeCheckout() {
           </div>
           <br />
           <div>Full name as per ID proof</div>
-          <input placeholder={name} />
+          <input style={{border:"none",outline:"none"}} placeholder={name} />
           <br />
           <br />
 
           <div>Email Address</div>
-          <input placeholder="Email address" />
+          <input style={{border:"none",outline:"none"}} placeholder="Email address" />
           <br />
           <br />
 
           <div>Annual Income</div>
-          <input placeholder="Annual Income" />
+          <input style={{border:"none",outline:"none"}} placeholder="Annual Income" />
           <br />
           <br />
 
-          <div>Occupation </div>
-          <select className="options">
+          <div >Occupation </div>
+          <select style={{border:"none",outline:"none"}} className="options">
             <option>Select</option>
             <option>Salaried</option>
             <option>Professional</option>
@@ -105,7 +105,7 @@ export default function MaxLifeCheckout() {
           <br />
           <div>Education</div>
           <br />
-          <select className="options">
+          <select style={{border:"none",outline:"none"}} className="options">
             <option>Select</option>
 
             <option>Graduate</option>

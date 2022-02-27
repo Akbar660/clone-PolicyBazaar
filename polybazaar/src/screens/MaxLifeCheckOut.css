@@ -348,6 +348,7 @@ margin-top: -20px;
     padding: 5px;
     text-align: left;
     color: rgb(45, 45, 100);
+    margin-left: 10px;
 }
 .outer-last-div{
     border-left: 1px solid rgb(159, 198, 243);
@@ -356,6 +357,8 @@ margin-top: -20px;
     border-bottom: 1px solid rgb(159, 198, 243);
     padding: 20px;
     display: grid;
+    margin-bottom: 30px;
+    margin-left: 10px;
    
    grid-template-columns: 33% 33% 33%;
     /* background-color: rgb(30, 139, 139); */
